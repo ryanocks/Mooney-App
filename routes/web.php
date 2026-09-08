@@ -2,10 +2,22 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\WordPressController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/update-wp-project/{id}', [WordPressController::class, 'updateProjectFromUpdatePayload']);
+
+
+// Route GET untuk mengambil data project dari WordPress
+Route::get('/get-wp-project/{id}', [WordPressController::class, 'getProject']);
+
+
+// Halaman Utama (Menampilkan daftar kartu)
+Route::get('/', [WordPressController::class, 'index'])->name('home');
+
+// Halaman Detail Project
+Route::get('/api/get-wp-project/{id}', [WordPressController::class, 'getProject'])->name('projects.show');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
