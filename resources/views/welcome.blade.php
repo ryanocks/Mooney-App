@@ -59,83 +59,100 @@
 
     <!-- MARQUEE SECTION -->
     <!-- FEATURED CASE STUDIES SECTION -->
-<section class="w-full py-space-4xl bg-surface-container-lowest relative" id="case-studies">
-    <div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
-        <!-- Header Section -->
-        <div class="flex flex-col items-center text-center mb-space-3xl max-w-2xl mx-auto">
-            <div class="inline-block px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-mono-code text-label-sm uppercase tracking-wider mb-space-sm border border-secondary/20">
-                FEATURED WORK
+<section class="w-full py-space-4xl bg-surface-container-lowest relative overflow-hidden" id="case-studies">
+
+    <!-- decorative glows, explicit indigo/blue to match the original reference -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#6c63ff]/20 blur-[100px] pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#4b8cff]/20 blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter-desktop relative z-10">
+
+        @if(!empty($projects))
+            <!-- State : ada data project -->
+            <div class="flex flex-col items-center text-center mb-space-3xl max-w-2xl mx-auto">
+                <div class="inline-block px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-mono-code text-label-sm uppercase tracking-wider mb-space-sm border border-secondary/20">
+                    FEATURED WORK
+                </div>
+                <h2 class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface mb-space-xs font-bold tracking-tight">
+                    Berikut detail project
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
+                    Selected client work delivering verifiable commercial impact and technical execution.
+                </p>
             </div>
-            <h2 class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface mb-space-xs font-bold tracking-tight">
-                Proof Over Promises: Recent Case Studies
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
-                Selected client work delivering verifiable commercial impact and technical execution.
-            </p>
-        </div>
 
-        <!-- Dynamic Grid Looping Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl max-w-6xl mx-auto">
-            @forelse($projects ?? [] as $project)
-    <a href="{{ route('projects.show', $project['id']) }}" class="group relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 shadow-xl hover:shadow-[0_16px_36px_-8px_rgba(99,102,241,0.25)] hover:border-primary/50 backdrop-blur-md overflow-hidden">
-        
-        <!-- Feature Image Thumbnail -->
-        @php
-            // Mengambil URL Gambar dari objek _embedded WordPress
-            $imageUrl = $project['_embedded']['wp:featuredmedia'][0]['source_url'] ?? null;
-        @endphp
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl max-w-6xl mx-auto">
+                @foreach($projects as $project)
+                    <a href="{{ route('projects.show', $project['id']) }}" class="group relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 shadow-xl hover:shadow-[0_16px_36px_-8px_rgba(99,102,241,0.25)] hover:border-primary/50 backdrop-blur-md overflow-hidden">
+                        @php
+                            $imageUrl = $project['_embedded']['wp:featuredmedia'][0]['source_url'] ?? null;
+                        @endphp
 
-        @if($imageUrl)
-            <div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container-high border border-outline-variant/20">
-                <img src="{{ $imageUrl }}" alt="{{ $project['title']['rendered'] ?? 'Project Image' }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        @if($imageUrl)
+                            <div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container-high border border-outline-variant/20">
+                                <img src="{{ $imageUrl }}" alt="{{ $project['title']['rendered'] ?? 'Project Image' }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                        @endif
+
+                        <div>
+                            <div class="flex items-center justify-between mb-space-sm">
+                                <span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary border border-primary/30 font-mono-code text-[11px] uppercase">
+                                    {{ $project['acf']['project_type'] ?? 'Case Study' }}
+                                </span>
+                                <span class="font-mono-code text-label-sm text-on-surface-variant">
+                                    {{ $project['acf']['finished_year'] ?? '-' }}
+                                </span>
+                            </div>
+
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs font-bold group-hover:text-primary transition-colors">
+                                {{ $project['title']['rendered'] ?? 'Untitled Project' }}
+                            </h3>
+
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg line-clamp-3 leading-relaxed">
+                                {{ $project['acf']['overview'] ?? 'No overview description available.' }}
+                            </p>
+                        </div>
+
+                        <div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+                            <div class="flex flex-wrap gap-1">
+                                @php
+                                    $stacks = array_filter(explode(',', $project['acf']['tech_stack'] ?? ''));
+                                @endphp
+                                @foreach(array_slice($stacks, 0, 3) as $stack)
+                                    <span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-outline-variant/30 text-secondary font-mono-code text-[11px]">
+                                        {{ trim($stack) }}
+                                    </span>
+                                @endforeach
+                            </div>
+                            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform text-[20px]">
+                                arrow_forward
+                            </span>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+
+        @else
+            <!-- State : tidak ada data project -->
+            <div class="flex flex-col items-center text-center min-h-[420px] justify-center">
+                <div class="flex flex-col items-center gap-space-lg max-w-2xl mx-auto">
+
+                    <div class="leading-tight">
+                        <span class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface font-bold">The Wait Will Be </span><span class="font-headline-xl text-3xl sm:text-headline-xl text-[#a5a1ff] font-normal italic inline-block -rotate-1">Worth It</span>
+                    </div>
+
+                    <p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Big ideas, Thoughftul design. Launching soon.
+                    </p>
+
+                    <a href="#"
+                    class="px-space-lg py-space-sm rounded-full bg-gradient-to-b from-[#a5a1ff] to-[#5b6dff] text-[#241f8c] font-bold font-body-md shadow-[0_0_30px_rgba(90,80,255,0.45)] ">
+                        Explore Mooney
+                    </a>
+                </div>
             </div>
         @endif
 
-        <div>
-            <!-- Category Badge & Year -->
-            <div class="flex items-center justify-between mb-space-sm">
-                <span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary border border-primary/30 font-mono-code text-[11px] uppercase">
-                    {{ $project['acf']['project_type'] ?? 'Case Study' }}
-                </span>
-                <span class="font-mono-code text-label-sm text-on-surface-variant">
-                    {{ $project['acf']['finished_year'] ?? '-' }}
-                </span>
-            </div>
-
-            <!-- Title -->
-            <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs font-bold group-hover:text-primary transition-colors">
-                {{ $project['title']['rendered'] ?? 'Untitled Project' }}
-            </h3>
-
-            <!-- Overview -->
-            <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg line-clamp-3 leading-relaxed">
-                {{ $project['acf']['overview'] ?? 'No overview description available.' }}
-            </p>
-        </div>
-
-        <!-- Card Footer -->
-        <div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
-            <div class="flex flex-wrap gap-1">
-                @php
-                    $stacks = array_filter(explode(',', $project['acf']['tech_stack'] ?? ''));
-                @endphp
-                @foreach(array_slice($stacks, 0, 3) as $stack)
-                    <span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-outline-variant/30 text-secondary font-mono-code text-[11px]">
-                        {{ trim($stack) }}
-                    </span>
-                @endforeach
-            </div>
-            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform text-[20px]">
-                arrow_forward
-            </span>
-        </div>
-    </a>
-@empty
-    <div class="col-span-full max-w-2xl mx-auto rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl text-center">
-        <p class="font-body-lg text-on-surface-variant">No projects found in WordPress.</p>
-    </div>
-@endforelse
-        </div>
     </div>
 </section>
 
