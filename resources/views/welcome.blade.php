@@ -59,102 +59,7 @@
 
     <!-- MARQUEE SECTION -->
     <!-- FEATURED CASE STUDIES SECTION -->
-<section class="w-full py-space-4xl bg-surface-container-lowest relative overflow-hidden" id="case-studies">
-
-    <!-- decorative glows, explicit indigo/blue to match the original reference -->
-    <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#6c63ff]/20 blur-[100px] pointer-events-none"></div>
-    <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#4b8cff]/20 blur-[100px] pointer-events-none"></div>
-
-    <div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter-desktop relative z-10">
-
-        @if(!empty($projects))
-            <!-- State : ada data project -->
-            <div class="flex flex-col items-center text-center mb-space-3xl max-w-2xl mx-auto">
-                <div class="inline-block px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-mono-code text-label-sm uppercase tracking-wider mb-space-sm border border-secondary/20">
-                    FEATURED WORK
-                </div>
-                <h2 class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface mb-space-xs font-bold tracking-tight">
-                    Berikut detail project
-                </h2>
-                <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
-                    Selected client work delivering verifiable commercial impact and technical execution.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl max-w-6xl mx-auto">
-                @foreach($projects as $project)
-                    <a href="{{ route('projects.show', $project['id']) }}" class="group relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 shadow-xl hover:shadow-[0_16px_36px_-8px_rgba(99,102,241,0.25)] hover:border-primary/50 backdrop-blur-md overflow-hidden">
-                        @php
-                            $imageUrl = $project['_embedded']['wp:featuredmedia'][0]['source_url'] ?? null;
-                        @endphp
-
-                        @if($imageUrl)
-                            <div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container-high border border-outline-variant/20">
-                                <img src="{{ $imageUrl }}" alt="{{ $project['title']['rendered'] ?? 'Project Image' }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                            </div>
-                        @endif
-
-                        <div>
-                            <div class="flex items-center justify-between mb-space-sm">
-                                <span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary border border-primary/30 font-mono-code text-[11px] uppercase">
-                                    {{ $project['acf']['project_type'] ?? 'Case Study' }}
-                                </span>
-                                <span class="font-mono-code text-label-sm text-on-surface-variant">
-                                    {{ $project['acf']['finished_year'] ?? '-' }}
-                                </span>
-                            </div>
-
-                            <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs font-bold group-hover:text-primary transition-colors">
-                                {{ $project['title']['rendered'] ?? 'Untitled Project' }}
-                            </h3>
-
-                            <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg line-clamp-3 leading-relaxed">
-                                {{ $project['acf']['overview'] ?? 'No overview description available.' }}
-                            </p>
-                        </div>
-
-                        <div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
-                            <div class="flex flex-wrap gap-1">
-                                @php
-                                    $stacks = array_filter(explode(',', $project['acf']['tech_stack'] ?? ''));
-                                @endphp
-                                @foreach(array_slice($stacks, 0, 3) as $stack)
-                                    <span class="px-space-xs py-0.5 rounded-md bg-surface-container-high border border-outline-variant/30 text-secondary font-mono-code text-[11px]">
-                                        {{ trim($stack) }}
-                                    </span>
-                                @endforeach
-                            </div>
-                            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform text-[20px]">
-                                arrow_forward
-                            </span>
-                        </div>
-                    </a>
-                @endforeach
-            </div>
-
-        @else
-            <!-- State : tidak ada data project -->
-            <div class="flex flex-col items-center text-center min-h-[420px] justify-center">
-                <div class="flex flex-col items-center gap-space-lg max-w-2xl mx-auto">
-
-                    <div class="leading-tight">
-                        <span class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface font-bold">The Wait Will Be </span><span class="font-headline-xl text-3xl sm:text-headline-xl text-[#a5a1ff] font-normal italic inline-block -rotate-1">Worth It</span>
-                    </div>
-
-                    <p class="font-body-lg text-body-lg text-on-surface-variant">
-                        Big ideas, Thoughftul design. Launching soon.
-                    </p>
-
-                    <a href="#"
-                    class="px-space-lg py-space-sm rounded-full bg-gradient-to-b from-[#a5a1ff] to-[#5b6dff] text-[#241f8c] font-bold font-body-md shadow-[0_0_30px_rgba(90,80,255,0.45)] ">
-                        Explore Mooney
-                    </a>
-                </div>
-            </div>
-        @endif
-
-    </div>
-</section>
+    
 
     <!-- SERVICES SECTION -->
     <section class="w-full py-space-4xl relative" id="services">
@@ -216,46 +121,64 @@
     </section>
 
     <!-- CASE STUDIES SECTION -->
-    <section class="w-full py-space-4xl bg-surface-container-lowest relative" id="case-studies">
-        <div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
-            <div class="flex flex-col items-center text-center mb-space-3xl max-w-2xl mx-auto">
-                <div class="inline-block px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-mono-code text-label-sm uppercase tracking-wider mb-space-sm border border-secondary/20">
-                    FEATURED WORK
-                </div>
-                <h2 class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface mb-space-xs font-bold tracking-tight">
-                    Proof Over Promises: Recent Case Studies
-                </h2>
-                <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
-                    Selected client work delivering verifiable commercial impact, massive adoption, and peerless technical execution.
-                </p>
-                <div class="flex flex-wrap items-center justify-center gap-space-2xs bg-surface-container-low p-1.5 rounded-full border border-outline-variant/30 shadow-md">
-                    <button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-medium shadow">All Work</button>
-                    <button class="px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Web Applications</button>
-                    <button class="px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">UI & UX Design</button>
-                    <button class="px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Company Profile</button>
-                </div>
+   <section class="w-full py-space-4xl bg-surface-container-lowest relative" id="case-studies">
+    <div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col items-center text-center mb-space-2xl max-w-2xl mx-auto">
+            <div class="inline-block px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary font-mono-code text-label-sm uppercase tracking-wider mb-space-md border border-secondary/20">
+                FEATURED WORK
             </div>
-            <div class="max-w-3xl mx-auto relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl lg:p-space-3xl overflow-hidden text-center flex flex-col items-center justify-center shadow-2xl backdrop-blur-md">
-                <div class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[480px] h-[300px] bg-primary-container/15 rounded-full blur-3xl"></div>
-                <div class="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[360px] h-[180px] bg-secondary-container/10 rounded-full blur-2xl"></div>
-                <div class="relative z-10 flex flex-col items-center max-w-2xl mx-auto">
-                    <div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high border border-outline-variant/40 mb-space-lg shadow-sm">
-                        <span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-                        <span class="font-mono-code text-label-sm text-tertiary uppercase tracking-wider font-semibold">Under Curation • Drops Soon</span>
-                    </div>
-                    <div class="w-16 h-16 rounded-2xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center mb-space-md shadow-lg">
-                        <span class="material-symbols-outlined text-primary text-[36px]">auto_awesome</span>
-                    </div>
-                    <h3 class="font-headline-lg text-2xl sm:text-headline-lg text-on-surface mb-space-sm tracking-tight font-bold">
-                        Exciting Case Studies Coming Soon
-                    </h3>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl leading-relaxed">
-                        Our newest high-impact product redesigns, fintech web apps, and design systems are currently undergoing client embargo clearance and final documentation.
-                    </p>
-                </div>
+            
+            <div class="leading-tight mb-space-xs">
+                <span class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface font-bold">The Wait Will Be </span>
+                <span class="font-headline-xl text-3xl sm:text-headline-xl text-[#a5a1ff] font-normal italic inline-block -rotate-1">Worth It</span>
+            </div>
+
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
+                Big ideas, thoughtful design. Launching soon.
+            </p>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-space-xs bg-surface-container-low p-1.5 rounded-full border border-outline-variant/30 shadow-md">
+                <button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-medium shadow">All Work</button>
+                <button class="px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Web Applications</button>
+                <button class="px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">UI & UX Design</button>
+                <button class="px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Company Profile</button>
             </div>
         </div>
-    </section>
+
+        <!-- Coming Soon Container Card -->
+        <div class="max-w-3xl mx-auto relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl lg:p-space-3xl overflow-hidden text-center flex flex-col items-center justify-center shadow-2xl backdrop-blur-md">
+            <div class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[480px] h-[300px] bg-primary-container/15 rounded-full blur-3xl"></div>
+            <div class="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[360px] h-[180px] bg-secondary-container/10 rounded-full blur-2xl"></div>
+
+            <div class="relative z-10 flex flex-col items-center max-w-xl mx-auto">
+                <!-- Status Pill -->
+                <div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high border border-outline-variant/40 mb-space-lg shadow-sm">
+                    <span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+                    <span class="font-mono-code text-label-sm text-tertiary uppercase tracking-wider font-semibold">Under Development • Drops Soon</span>
+                </div>
+
+                <!-- Icon Box -->
+                <div class="w-16 h-16 rounded-2xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center mb-space-md shadow-lg">
+                    <span class="material-symbols-outlined text-primary text-[36px]">auto_awesome</span>
+                </div>
+
+                <!-- Title -->
+                <h3 class="font-headline-lg text-2xl sm:text-headline-lg text-on-surface mb-space-xs tracking-tight font-bold">
+                    Crafting Next-Gen Case Studies
+                </h3>
+
+                <!-- Description (Sudah disesuaikan tanpa klausa Klien/Embargo) -->
+                <p class="font-body-md text-on-surface-variant leading-relaxed">
+                    We are currently polishing our upcoming web apps, UI/UX systems, and digital product designs. Stay tuned for our upcoming project showcase.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- PACKAGES & PRICING SECTION -->
     <section class="w-full py-space-4xl relative" id="process">
