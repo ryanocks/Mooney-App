@@ -180,7 +180,7 @@
     </div>
 </section>
 
-    <!-- PACKAGES & PRICING SECTION -->
+        <!-- PACKAGES & PRICING SECTION -->
     <section class="w-full py-space-4xl relative" id="process">
         <div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
             <div class="text-center max-w-2xl mx-auto mb-space-3xl">
@@ -188,110 +188,113 @@
                     PACKAGES & PRICING
                 </div>
                 <h2 class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface mb-space-xs font-bold tracking-tight">
-                    Scalable Web Development & Design Packages
+                    Professional Web Development & Design Packages
                 </h2>
                 <p class="font-body-lg text-body-lg text-on-surface-variant">
-                    Transparent, value-driven pricing tailored to your business stage and scale.
+                    Transparent, value-driven pricing with zero hidden fees, tailored to your business scale.
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg items-stretch">
-                <!-- Card 1: Company Profile -->
-                <div class="relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:border-outline-variant transition-all">
-                    <div class="flex flex-col">
-                        <div class="mb-space-md">
-                            <span class="inline-block px-space-sm py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-primary font-mono-code text-[11px] font-semibold tracking-wider uppercase">WORDPRESS</span>
-                        </div>
-                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Company Profile</h3>
-                        <div class="mb-space-xs">
-                            <span class="text-[24px] font-bold text-on-surface tracking-tight">$1,500 – $3,500</span>
-                        </div>
-                        <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 2–4 weeks estimate</p>
-                        <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
-                            <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Custom design</strong> matching brand identity (5–15 pages)</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Home, About, Services/Products, Blog & Contact</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Contact form, Google Maps & WhatsApp button</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Professional business email & SSL</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Baseline SEO + Google Analytics & Search Console</span></li>
-                            </ul>
-                        </div>
+           <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg items-stretch">
+            <!-- Card 1: Landing Page -->
+            <div class="relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:border-outline-variant transition-all">
+                <div class="flex flex-col">
+                    <div class="mb-space-md">
+                        <span class="inline-block px-space-sm py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-primary font-mono-code text-[11px] font-semibold tracking-wider uppercase">LANDING PAGE</span>
                     </div>
-                    <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md text-label-md hover:bg-surface-bright hover:border-outline-variant transition-all text-center font-medium" href="#estimator">Choose Package</a>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Landing Page</h3>
+                    <div class="mb-space-xs">
+                        <span class="text-[24px] font-bold text-on-surface tracking-tight">IDR 1.5M – IDR 2.5M</span>
+                    </div>
+                    <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 3–7 business days</p>
+                    <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
+                        <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">1-page responsive design</strong> & mobile-friendly</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Direct WhatsApp click-to-chat & contact form</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Free SSL certificate installation (HTTPS)</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Baseline SEO & domain/hosting configuration</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>2 revision rounds & 1-month bug warranty</span></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!-- Card 2: WooCommerce Store (Highlighted) -->
-                <div class="relative rounded-2xl bg-surface-container-low border-2 border-primary p-space-xl flex flex-col justify-between shadow-[0_0_35px_rgba(128,131,255,0.2)] hover:shadow-[0_0_45px_rgba(128,131,255,0.3)] transition-all">
-                    <div class="absolute -top-3 left-6">
-                        <span class="inline-block px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-mono-code text-[11px] font-bold tracking-wider uppercase shadow-md">MOST POPULAR</span>
-                    </div>
-                    <div class="flex flex-col">
-                        <div class="mb-space-md mt-1">
-                            <span class="inline-block px-space-sm py-1 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-mono-code text-[11px] font-semibold tracking-wider uppercase">WORDPRESS · WOOCOMMERCE</span>
-                        </div>
-                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">WooCommerce Store</h3>
-                        <div class="mb-space-xs">
-                            <span class="text-[24px] font-bold text-on-surface tracking-tight">$3,500 – $7,500</span>
-                        </div>
-                        <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 3–6 weeks estimate</p>
-                        <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
-                            <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Comprehensive product catalog</strong>, variants, inventory & promo vouchers</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Conversion-optimized cart & checkout</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Local & global payment integration</strong> (Stripe, PayPal, QRIS/VA, Cards)</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Automated shipping rate calculation & tracking</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-fixed shadow-[0_0_20px_rgba(128,131,255,0.35)] hover:-translate-y-0.5 transition-all text-center font-semibold" href="#estimator">Choose This Package</a>
-                </div>
-
-                <!-- Card 3: Shopify Store -->
-                <div class="relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:border-outline-variant transition-all">
-                    <div class="flex flex-col">
-                        <div class="mb-space-md">
-                            <span class="inline-block px-space-sm py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-secondary font-mono-code text-[11px] font-semibold tracking-wider uppercase">SHOPIFY</span>
-                        </div>
-                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Shopify Online Store</h3>
-                        <div class="mb-space-xs">
-                            <span class="text-[24px] font-bold text-on-surface tracking-tight">$4,500 – $9,000</span>
-                        </div>
-                        <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 3–6 weeks estimate</p>
-                        <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
-                            <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Custom brand theme</strong> — fast, reliable & zero technical overhead</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Battle-tested Shopify high-converting checkout</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Global & local payments</strong> (Shopify Payments, PayPal, Stripe)</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Automated multi-carrier shipping & tax automation</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md text-label-md hover:bg-surface-bright hover:border-outline-variant transition-all text-center font-medium" href="#estimator">Choose Package</a>
-                </div>
-
-                <!-- Card 4: Enterprise Magento -->
-                <div class="relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:border-outline-variant transition-all">
-                    <div class="flex flex-col">
-                        <div class="mb-space-md">
-                            <span class="inline-block px-space-sm py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-tertiary font-mono-code text-[11px] font-semibold tracking-wider uppercase">MAGENTO · ADOBE COMMERCE</span>
-                        </div>
-                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Enterprise E-Commerce</h3>
-                        <div class="mb-space-xs">
-                            <span class="text-[24px] font-bold text-on-surface tracking-tight">$12,000 – $30,000</span>
-                        </div>
-                        <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 6–12 weeks estimate</p>
-                        <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
-                            <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Large-scale B2B & B2C architecture</strong> — thousands of SKUs & high traffic</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span>Multi-store, multi-language & multi-currency capabilities</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span>Custom tier pricing per customer group & B2B quoting</span></li>
-                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span>Enterprise ERP, CRM, and custom payment integrations</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md text-label-md hover:bg-surface-bright hover:border-outline-variant transition-all text-center font-medium" href="#estimator">Contact Sales</a>
-                </div>
+                <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md text-label-md hover:bg-surface-bright hover:border-outline-variant transition-all text-center font-medium" href="#estimator">Choose Package</a>
             </div>
+
+            <!-- Card 2: Company Profile Pro (Highlighted) -->
+            <div class="relative rounded-2xl bg-surface-container-low border-2 border-primary p-space-xl flex flex-col justify-between shadow-[0_0_35px_rgba(128,131,255,0.2)] hover:shadow-[0_0_45px_rgba(128,131,255,0.3)] transition-all">
+                <div class="absolute -top-3 left-6">
+                    <span class="inline-block px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-mono-code text-[11px] font-bold tracking-wider uppercase shadow-md">MOST POPULAR</span>
+                </div>
+                <div class="flex flex-col">
+                    <div class="mb-space-md mt-1">
+                        <span class="inline-block px-space-sm py-1 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-mono-code text-[11px] font-semibold tracking-wider uppercase">COMPANY PROFILE · CMS</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Company Profile Pro</h3>
+                    <div class="mb-space-xs">
+                        <span class="text-[24px] font-bold text-on-surface tracking-tight">IDR 5.5M – IDR 7.5M</span>
+                    </div>
+                    <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 14–21 business days</p>
+                    <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
+                        <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">8–12 pages custom design</strong> (not from templates)</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Self-managed CMS dashboard & portfolio gallery</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">On-page SEO</strong> & Google Search Console integration</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Business email up to 5 accounts & visitor analytics</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check</span><span>Bilingual option, 3 revisions & 3-month warranty</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-fixed shadow-[0_0_20px_rgba(128,131,255,0.35)] hover:-translate-y-0.5 transition-all text-center font-semibold" href="#estimator">Choose This Package</a>
+            </div>
+
+            <!-- Card 3: Online Store Pro -->
+            <div class="relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:border-outline-variant transition-all">
+                <div class="flex flex-col">
+                    <div class="mb-space-md">
+                        <span class="inline-block px-space-sm py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-secondary font-mono-code text-[11px] font-semibold tracking-wider uppercase">ONLINE STORE · PRO</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Online Store Pro</h3>
+                    <div class="mb-space-xs">
+                        <span class="text-[24px] font-bold text-on-surface tracking-tight">IDR 8.9M – IDR 12M</span>
+                    </div>
+                    <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 21–30 business days</p>
+                    <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
+                        <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Comprehensive product catalog</strong>, stock & variants</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Automated payments (QRIS, VA, E-Wallet, Cards)</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Automated shipping calculation</strong> (JNE, J&T, SiCepat)</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Automated order notifications & multi-admin control</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Integrated sales analytics & 3-month warranty</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md text-label-md hover:bg-surface-bright hover:border-outline-variant transition-all text-center font-medium" href="#estimator">Choose Package</a>
+            </div>
+
+            <!-- Card 4: Custom E-Commerce -->
+            <div class="relative rounded-2xl bg-surface-container-low border border-outline-variant/30 p-space-xl flex flex-col justify-between hover:border-outline-variant transition-all">
+                <div class="flex flex-col">
+                    <div class="mb-space-md">
+                        <span class="inline-block px-space-sm py-1 rounded-full bg-surface-container-high border border-outline-variant/30 text-tertiary font-mono-code text-[11px] font-semibold tracking-wider uppercase">CUSTOM · ENTERPRISE</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Custom E-Commerce</h3>
+                    <div class="mb-space-xs">
+                        <span class="text-[24px] font-bold text-on-surface tracking-tight">From IDR 20M</span>
+                    </div>
+                    <p class="font-body-sm text-[12px] text-on-surface-variant mb-space-lg">One-time · 1–3 months timeline</p>
+                    <div class="border-t border-outline-variant/20 pt-space-md mb-space-xl">
+                        <ul class="space-y-space-sm text-body-sm text-on-surface-variant">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">Tailored checkout & bespoke business logic</strong></span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span>B2B tiered pricing & multi-warehouse management</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span><strong class="text-on-surface font-semibold">ERP, CRM, accounting</strong> & custom API integrations</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span>Custom reporting dashboard & high-traffic scalability</span></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">check</span><span>End-to-end testing, team handover & 6-month warranty</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="w-full inline-flex items-center justify-center py-space-sm px-space-md rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-md text-label-md hover:bg-surface-bright hover:border-outline-variant transition-all text-center font-medium" href="#estimator">Contact Sales</a>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -307,7 +310,7 @@
                     Which package <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary to-secondary">fits your business best</span>?
                 </h2>
                 <p class="font-body-lg text-body-lg text-on-surface-variant">
-                    Comprehensive feature breakdown across our four core web tiers — from company profiles to enterprise-scale e-commerce.
+                    Comprehensive feature breakdown across our four core web tiers — from single landing pages to enterprise e-commerce.
                 </p>
             </div>
 
@@ -316,46 +319,46 @@
                     <table class="w-full text-left border-collapse min-w-[760px]">
                         <thead>
                             <tr class="border-b border-outline-variant/30">
-                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface-variant w-[24%] bg-[#12161D]">Features</th>
-                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface w-[19%] bg-[#10141a] text-center border-l border-outline-variant/20">Company Profile</th>
+                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface-variant w-[24%] bg-[#12161D]">Features & Specs</th>
+                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface w-[19%] bg-[#10141a] text-center border-l border-outline-variant/20">Landing Page</th>
                                 <th class="p-5 font-headline-sm text-sm font-bold text-white w-[19%] bg-gradient-to-b from-[#252865] to-[#1E204E] text-center border-x-2 border-t-2 border-primary relative shadow-lg">
                                     <div class="flex flex-col items-center">
-                                        <span class="text-white text-base">WooCommerce Store</span>
+                                        <span class="text-white text-base">Company Profile Pro</span>
                                         <span class="mt-1 inline-block px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-mono-code text-[10px] font-bold uppercase tracking-wider shadow">Most Popular</span>
                                     </div>
                                 </th>
-                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface w-[19%] bg-[#10141a] text-center border-l border-outline-variant/20">Shopify Store</th>
-                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface w-[19%] bg-[#10141a] text-center border-l border-outline-variant/20">Enterprise Magento</th>
+                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface w-[19%] bg-[#10141a] text-center border-l border-outline-variant/20">Online Store Pro</th>
+                                <th class="p-5 font-headline-sm text-sm font-semibold text-on-surface w-[19%] bg-[#10141a] text-center border-l border-outline-variant/20">Custom E-Commerce</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-outline-variant/20 text-body-sm font-body-sm">
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
                                 <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Price Range</td>
-                                <td class="p-4 px-3 text-center text-on-surface font-semibold border-l border-outline-variant/20">$1,500 – $3,500</td>
-                                <td class="p-4 px-3 text-center text-primary-fixed font-bold bg-primary/10 border-x-2 border-primary shadow-sm">$3,500 – $7,500</td>
-                                <td class="p-4 px-3 text-center text-on-surface font-semibold border-l border-outline-variant/20">$4,500 – $9,000</td>
-                                <td class="p-4 px-3 text-center text-on-surface font-semibold border-l border-outline-variant/20">$12,000 – $30,000+</td>
+                                <td class="p-4 px-3 text-center text-on-surface font-semibold border-l border-outline-variant/20">IDR 1.5M – IDR 2.5M</td>
+                                <td class="p-4 px-3 text-center text-primary-fixed font-bold bg-primary/10 border-x-2 border-primary shadow-sm">IDR 5.5M – IDR 7.5M</td>
+                                <td class="p-4 px-3 text-center text-on-surface font-semibold border-l border-outline-variant/20">IDR 8.9M – IDR 12M</td>
+                                <td class="p-4 px-3 text-center text-on-surface font-semibold border-l border-outline-variant/20">From IDR 20M</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
                                 <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Estimated Timeline</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20">2–4 weeks</td>
-                                <td class="p-4 px-3 text-center text-on-surface font-medium bg-primary/10 border-x-2 border-primary">3–6 weeks</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20">3–6 weeks</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20">6–12 weeks</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20">3–7 business days</td>
+                                <td class="p-4 px-3 text-center text-on-surface font-medium bg-primary/10 border-x-2 border-primary">14–21 business days</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20">21–30 business days</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20">1–3 months</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
-                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Core Platform</td>
-                                <td class="p-4 px-3 text-center text-on-surface border-l border-outline-variant/20 font-mono-code text-[13px]">WordPress</td>
-                                <td class="p-4 px-3 text-center text-primary font-medium bg-primary/10 border-x-2 border-primary font-mono-code text-[13px]">WordPress + WooCommerce</td>
-                                <td class="p-4 px-3 text-center text-secondary border-l border-outline-variant/20 font-mono-code text-[13px]">Shopify</td>
-                                <td class="p-4 px-3 text-center text-tertiary border-l border-outline-variant/20 font-mono-code text-[13px]">Magento / Adobe Commerce</td>
+                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Method / Platform</td>
+                                <td class="p-4 px-3 text-center text-on-surface border-l border-outline-variant/20 font-mono-code text-[13px]">Static / No CMS</td>
+                                <td class="p-4 px-3 text-center text-primary font-medium bg-primary/10 border-x-2 border-primary font-mono-code text-[13px]">CMS (Self-Managed)</td>
+                                <td class="p-4 px-3 text-center text-secondary border-l border-outline-variant/20 font-mono-code text-[13px]">E-Commerce CMS</td>
+                                <td class="p-4 px-3 text-center text-tertiary border-l border-outline-variant/20 font-mono-code text-[13px]">Custom App / Framework</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
                                 <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Best Suited For</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20 text-[13px] leading-relaxed">Service businesses & corporate profile</td>
-                                <td class="p-4 px-3 text-center text-on-surface font-medium bg-primary/10 border-x-2 border-primary text-[13px] leading-relaxed">Growing SMBs & online brands</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20 text-[13px] leading-relaxed">Fast-scaling DTC brands</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20 text-[13px] leading-relaxed">Enterprise & large catalog stores</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20 text-[13px] leading-relaxed">New SMBs, solo services & ad campaigns</td>
+                                <td class="p-4 px-3 text-center text-on-surface font-medium bg-primary/10 border-x-2 border-primary text-[13px] leading-relaxed">Growing companies, consultants & agencies</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20 text-[13px] leading-relaxed">Retail brands, distributors & multi-variant stores</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant border-l border-outline-variant/20 text-[13px] leading-relaxed">Enterprise businesses, B2B & marketplaces</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
                                 <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Custom Brand Design</td>
@@ -365,66 +368,66 @@
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
-                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Mobile Responsive & SSL</td>
+                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Mobile Responsive & Free SSL</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold bg-primary/10 border-x-2 border-primary text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
-                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Basic SEO + Analytics</td>
+                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">SEO & Search Console Setup</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold bg-primary/10 border-x-2 border-primary text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
-                                <td class="p-4 px-3 text-center text-tertiary font-bold border-l border-outline-variant/20 text-sm">✓ Advanced</td>
+                                <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
                                 <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Product Catalog & Checkout</td>
                                 <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
-                                <td class="p-4 px-3 text-center text-emerald-400 font-bold bg-primary/10 border-x-2 border-primary text-lg">✓</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
-                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Payment Gateways (Local & Global)</td>
+                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Automated Payment Gateways</td>
                                 <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
-                                <td class="p-4 px-3 text-center text-emerald-400 font-bold bg-primary/10 border-x-2 border-primary text-lg">✓</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
                                 <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Automated Shipping & Tracking</td>
                                 <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
-                                <td class="p-4 px-3 text-center text-emerald-400 font-bold bg-primary/10 border-x-2 border-primary text-lg">✓</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
-                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Multi-Store / Multi-Language</td>
+                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Multi-Language Support</td>
                                 <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant font-medium bg-primary/10 border-x-2 border-primary text-[13px]">Optional</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant font-medium border-l border-outline-variant/20 text-[13px]">Limited</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant font-medium bg-primary/10 border-x-2 border-primary text-[13px]">Bilingual Option</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant font-medium border-l border-outline-variant/20 text-[13px]">Optional</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
-                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">B2B Tier Pricing & Customer Groups</td>
+                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">B2B Tiered Pricing / Custom Flow</td>
                                 <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant font-medium bg-primary/10 border-x-2 border-primary text-[13px]">Add-on</td>
-                                <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant font-medium bg-primary/10 border-x-2 border-primary text-[13px]">—</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant font-medium border-l border-outline-variant/20 text-[13px]">Optional</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
                                 <td class="p-4 px-5 font-medium text-on-surface bg-[#141820]">Admin Dashboard + Training</td>
-                                <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
+                                <td class="p-4 px-3 text-center text-on-surface-variant/40 border-l border-outline-variant/20 text-lg">—</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold bg-primary/10 border-x-2 border-primary text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                                 <td class="p-4 px-3 text-center text-emerald-400 font-bold border-l border-outline-variant/20 text-lg">✓</td>
                             </tr>
                             <tr class="hover:bg-surface-container-high/40 transition-colors">
-                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820] rounded-bl-2xl">Free Bug Warranty & Support</td>
-                                <td class="p-4 px-3 text-center text-on-surface font-medium border-l border-outline-variant/20">6 months</td>
-                                <td class="p-4 px-3 text-center text-primary-fixed font-semibold bg-primary/10 border-x-2 border-b-2 border-primary">6 months</td>
-                                <td class="p-4 px-3 text-center text-on-surface font-medium border-l border-outline-variant/20">6 months</td>
+                                <td class="p-4 px-5 font-medium text-on-surface bg-[#141820] rounded-bl-2xl">Bug Warranty & Support</td>
+                                <td class="p-4 px-3 text-center text-on-surface font-medium border-l border-outline-variant/20">1 month</td>
+                                <td class="p-4 px-3 text-center text-primary-fixed font-semibold bg-primary/10 border-x-2 border-b-2 border-primary">3 months</td>
+                                <td class="p-4 px-3 text-center text-on-surface font-medium border-l border-outline-variant/20">3 months</td>
                                 <td class="p-4 px-3 text-center text-on-surface font-medium border-l border-outline-variant/20 rounded-br-2xl">6 months</td>
                             </tr>
                         </tbody>
@@ -438,15 +441,15 @@
         </div>
     </section>
 
-    <!-- CONTACT FORM SECTION -->
+    <!-- CONTACT & ESTIMATOR FORM SECTION -->
     <section class="w-full py-space-4xl bg-surface-container-lowest relative overflow-hidden" id="estimator">
         <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-primary-container/10 rounded-full blur-[140px]"></div>
         <div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter-desktop relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
                 <div class="lg:col-span-5 flex flex-col items-start text-left">
-                    <div class="inline-block px-space-sm py-1 rounded-full bg-primary-container/20 text-primary font-mono-code text-label-sm uppercase tracking-wider mb-space-sm border border-primary/20">START A CONVERSATION</div>
+                    <div class="inline-block px-space-sm py-1 rounded-full bg-primary-container/20 text-primary font-mono-code text-label-sm uppercase tracking-wider mb-space-sm border border-primary/20">FREE CONSULTATION</div>
                     <h2 class="font-headline-xl text-3xl sm:text-headline-xl text-on-surface mb-space-md font-bold tracking-tight">Let’s Build Something Remarkable Together.</h2>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl">Tell us about your product roadmap, deadlines, or design challenges. Our principal architects respond within 4 hours with an actionable technical audit and timeline estimate.</p>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl">Tell us about your business goals, design references, or target launch timeline. We provide a 100% free consultation, transparent written proposal, and actionable milestone estimates.</p>
                     <div class="flex flex-col gap-space-md w-full mb-space-xl">
                         <a class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-tertiary/50 hover:bg-surface-container transition-all group shadow-md" href="https://whatsapp.com" target="_blank">
                             <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center group-hover:bg-tertiary/20 transition-colors">
@@ -454,25 +457,25 @@
                             </div>
                             <div>
                                 <div class="font-label-md text-label-md text-on-surface font-semibold">Chat on WhatsApp</div>
-                                <div class="font-body-sm text-body-sm text-on-surface-variant">Typically replies in 15m • Direct Founder Line</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant">+62 895-2616-3236</div>
                             </div>
                         </a>
-                        <a class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary/50 hover:bg-surface-container transition-all group shadow-md" href="mailto:hello@mooney.studio">
+                        <a class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary/50 hover:bg-surface-container transition-all group shadow-md" href="mailto:hello@yourdomain.com">
                             <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
                                 <span class="material-symbols-outlined text-secondary text-[24px]">mail</span>
                             </div>
                             <div>
-                                <div class="font-label-md text-label-md text-on-surface font-semibold">hello@mooney.studio</div>
-                                <div class="font-body-sm text-body-sm text-on-surface-variant">Direct Studio Inquiries & RFP Submissions</div>
+                                <div class="font-label-md text-label-md text-on-surface font-semibold">Send Official Email</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant">compmooney@gmail.com</div>
                             </div>
                         </a>
                     </div>
                     <div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-left w-full">
                         <div class="flex items-center gap-space-xs">
                             <span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
-                            <span class="font-mono-code text-mono-code text-on-surface font-medium">Headquarters: New York • UTC-5</span>
+                            <span class="font-mono-code text-mono-code text-on-surface font-medium">Coverage: Indonesia & Global • UTC+7</span>
                         </div>
-                        <span class="font-mono-code text-mono-code text-tertiary font-semibold">Average Response Time: &lt; 4 Hours</span>
+                        <span class="font-mono-code text-mono-code text-tertiary font-semibold">Average Response Time: &lt; 2 Hours</span>
                     </div>
                 </div>
 
@@ -483,50 +486,53 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
                                 <div>
                                     <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Your Name *</label>
-                                    <input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary transition-colors font-body-md text-body-md" name="name" placeholder="Alexander Vance" required type="text">
+                                    <input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary transition-colors font-body-md text-body-md" name="name" placeholder="e.g. Alexander Vance" required type="text">
                                 </div>
                                 <div>
-                                    <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Work Email *</label>
-                                    <input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary transition-colors font-body-md text-body-md" name="email" placeholder="alex@company.com" required type="email">
+                                    <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Work Email / WhatsApp *</label>
+                                    <input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary transition-colors font-body-md text-body-md" name="email" placeholder="alex@company.com or +62 812..." required type="text">
                                 </div>
                             </div>
                             <div>
                                 <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Project Scope</label>
                                 <select name="scope" class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface focus:outline-none focus:border-primary transition-colors font-body-md text-body-md">
-                                    <option>Full-Stack Web App Development (Next.js / Laravel)</option>
-                                    <option>Bespoke UI/UX Design & Figma System</option>
-                                    <option>Website Re-platforming & Speed Optimization</option>
-                                    <option>Fintech / Web3 Dashboard Interface</option>
-                                    <option>Ongoing SLA & Technical Retainer</option>
+                                    <option>Landing Page (1-Page Promo / SMB)</option>
+                                    <option>Company Profile (Basic / Pro / Corporate)</option>
+                                    <option>Online Store / E-Commerce (Starter / Pro)</option>
+                                    <option>Custom E-Commerce / B2B Platform</option>
+                                    <option>News Portal / Online Media Publisher</option>
+                                    <option>School / University Portal (with Online Admissions)</option>
+                                    <option>Online Booking & Reservation System</option>
+                                    <option>Add-on Services (SEO, Redesign, or Custom Modules)</option>
                                 </select>
                             </div>
                             <div>
-                                <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Estimated Budget Range (USD)</label>
+                                <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Estimated Budget Range</label>
                                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
                                     <label class="cursor-pointer">
-                                        <input class="peer sr-only" name="budget" type="radio" value="<10k">
-                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">&lt; $10k</div>
+                                        <input class="peer sr-only" name="budget" type="radio" value="<3jt">
+                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">&lt; IDR 3M</div>
                                     </label>
                                     <label class="cursor-pointer">
-                                        <input checked class="peer sr-only" name="budget" type="radio" value="10k-25k">
-                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">$10k - $25k</div>
+                                        <input checked class="peer sr-only" name="budget" type="radio" value="3jt-7.5jt">
+                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">IDR 3M – 7.5M</div>
                                     </label>
                                     <label class="cursor-pointer">
-                                        <input class="peer sr-only" name="budget" type="radio" value="25k-50k">
-                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">$25k - $50k</div>
+                                        <input class="peer sr-only" name="budget" type="radio" value="7.5jt-15jt">
+                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">IDR 7.5M – 15M</div>
                                     </label>
                                     <label class="cursor-pointer">
-                                        <input class="peer sr-only" name="budget" type="radio" value="50k+">
-                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">$50k+</div>
+                                        <input class="peer sr-only" name="budget" type="radio" value=">15jt">
+                                        <div class="text-center py-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 text-on-surface-variant font-mono-code text-mono-code peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">&gt; IDR 15M</div>
                                     </label>
                                 </div>
                             </div>
                             <div>
-                                <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Project Goals & Timeline</label>
-                                <textarea name="message" class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary transition-colors font-body-md text-body-md resize-none" placeholder="Briefly describe your objectives, existing stack, reference products, or key target launch milestones..." rows="4"></textarea>
+                                <label class="block font-label-sm text-label-sm text-on-surface mb-space-xs font-semibold">Project Goals & Target Timeline</label>
+                                <textarea name="message" class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary transition-colors font-body-md text-body-md resize-none" placeholder="Briefly describe your objectives, existing brand references, specific feature requirements, or target launch milestones..." rows="4"></textarea>
                             </div>
                             <div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
-                                <span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">Strict NDA honored upon initial request.</span>
+                                <span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">100% free consultation & transparent quote with zero hidden fees.</span>
                                 <button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-all duration-300 shadow-[0_0_24px_rgba(192,193,255,0.35)] hover:shadow-[0_0_36px_rgba(123,208,255,0.5)] hover:-translate-y-0.5 cursor-pointer font-semibold" type="submit">
                                     <span>Send Project Brief</span>
                                     <span class="material-symbols-outlined text-[18px]">bolt</span>
